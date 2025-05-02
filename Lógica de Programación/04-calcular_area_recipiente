@@ -1,0 +1,38 @@
+"""
+Programa para gestionar informacion sobre el área de un recipiente
+Autor: Lógica G2D
+Fecha: Febrero 24
+Licencia: GNU GPL v3
+
+"""
+
+
+def main():
+    propocionar_longitud=ingresar_real("Longitud del recipiente")
+    proporcionar_ancho=ingresar_real("Ancho del recipiente")
+    area_total=calcular_area_recipiente(propocionar_longitud,proporcionar_ancho)
+    mensaje=generar_mensaje(propocionar_longitud,proporcionar_ancho,area_total)
+    mostrar_mensaje(mensaje)
+
+
+
+def ingresar_real(mensaje):
+    real=float(input(mensaje))
+    return real
+
+
+def calcular_area_recipiente(propocionar_longitud,proporcionar_ancho):
+    area_recipiente=propocionar_longitud*proporcionar_ancho
+    return area_recipiente
+
+
+def generar_mensaje(longitud,ancho,area_recipiente):
+    mensaje=f"El valor de la longitud es {longitud}\nEl valor del ancho es {ancho}\nPor tanto el area del recipiente es {area_recipiente}"
+    return mensaje
+
+
+def mostrar_mensaje(mensaje):
+    print (mensaje)
+
+
+main()
