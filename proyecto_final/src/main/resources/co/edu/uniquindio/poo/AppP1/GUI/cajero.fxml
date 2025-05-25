@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="co.edu.uniquindio.poo.AppP1.GUI.CajeroController"
+      alignment="CENTER" spacing="10" style="-fx-padding: 20;">
+    <Label text="Panel del Cajero"/>
+    <Button text="Registrar cliente" onAction="#registrarCliente"/>
+    <Button text="Realizar depósito" onAction="#realizarDeposito"/>
+    <Button text="Realizar retiro" onAction="#realizarRetiro"/>
+    <Button text="Transferencia" onAction="#realizarTransferencia"/>
+    <Button text="Generar reporte" onAction="#generarReporte"/>
+</VBox>
